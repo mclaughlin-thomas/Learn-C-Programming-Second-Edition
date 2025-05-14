@@ -203,6 +203,10 @@ The initialization for a 3 x 4 x 5 array should appear as
   when the function should be
   > [sscanf()]()
 
+* **Page 499:** In the source code example that prints `stringBuffer`, a stray backslash (`\`) appears before the closing double quote in the printf statement. This should either be removed to correctly terminate the string literal or replaced with `\n` for improved readability, as shown below:
+
+          printf( "Processed string: [%s]\n", stringBuffer );
+
 * **Page 504:** In the 3rd paragraph, it reads
   > The following program reads a group of digits, each of which is intended to represent a date—[the first four digits for the year, the next two for the month, and the last two for the day]():
 
